@@ -4,8 +4,8 @@
 
 using namespace std;
 
-Checking_Account::Checking_Account(string name, double balance, double withdrawal_fee)
-    : Account {name, balance}, withdrawal_fee{withdrawal_fee} {
+Checking_Account::Checking_Account(string name, double balance)
+    : Account {name, balance} {
 }
 
 // Withdrawal:
@@ -13,11 +13,15 @@ Checking_Account::Checking_Account(string name, double balance, double withdrawa
 //      and then the updated amount will be withdrawn
 
 bool Checking_Account::withdraw(double amount) {
-    amount += 1.50;
+    amount += def_withdrawal_fee;
     return Account::withdraw(amount);
 }
 
+bool Checking_Account::deposit(double amount) {
+    return Account::deposit(amount);
+}
+
 ostream &operator<<(ostream &os, const Checking_Account &account) {
-    os << "[Checking_Account: " << account.name << ": " << account.balance << ", " << account.withdrawal_fee << "]";
+    os << "[Checking_Account: " << account.name << ": " << account.balance  << "]";
     return os;
 }

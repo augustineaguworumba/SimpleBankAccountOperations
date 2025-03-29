@@ -9,6 +9,22 @@
 using namespace std;
 
 int main() {
+    //Account joe;
+    Checking_Account c;
+    cout << c << endl;
+    
+    Savings_Account s {"Frank", 5000, 2.6};
+    cout << s << endl;
+    
+    s.deposit(10000);
+    cout << s << endl;
+    
+    s.withdraw(10000);
+    cout << s << endl;
+    
+    //Account *ptr = new Trust_Account{"Leo", 10000, 2.6};
+    //cout << *ptr << endl;
+    /*
     cout.precision(2);
     cout << fixed;
    
@@ -69,6 +85,6 @@ int main() {
     for (int i=1; i<=5; i++)
         withdraw(trust_accounts, 1000);
     
-
+    */
     return 0;
 }

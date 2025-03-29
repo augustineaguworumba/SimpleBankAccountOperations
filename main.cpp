@@ -9,7 +9,7 @@
 using namespace std;
 
 int main() {
-    //Account joe;
+    /* //Account joe;
     Checking_Account c;
     cout << c << endl;
     
@@ -21,9 +21,9 @@ int main() {
     
     s.withdraw(10000);
     cout << s << endl;
-    
-    //Account *ptr = new Trust_Account{"Leo", 10000, 2.6};
-    //cout << *ptr << endl;
+    */
+    Account *ptr = new Trust_Account{"Leo", 10000, 2.6};
+    cout << *ptr << endl;
     /*
     cout.precision(2);
     cout << fixed;

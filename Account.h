@@ -2,11 +2,11 @@
 #define _ACCOUNT_H_
 #include <iostream>
 #include <string>
+#include "I_Printable.h"
 
 using namespace std;
 
-class Account {
-    friend ostream &operator<<(ostream &os, const Account &account);
+class Account : public I_Printable {
 private:   
     static constexpr const char *def_name = "Unnamed Account";
     static constexpr double def_balance = 0.0;
@@ -18,6 +18,7 @@ public:
     // Account(string name = "Unamed Account", double balance = 0.0);
      virtual bool deposit(double amount) = 0;
      virtual bool withdraw(double amount) = 0;
+     virtual void print(ostream &os) const override;
      virtual ~Account() = default;
 };
 #endif

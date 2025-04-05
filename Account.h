@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 #include "I_Printable.h"
+#include "IllegalBalanceException.h"
+#include "InsufficientFundException.h"
 
 using namespace std;
 
@@ -19,6 +21,7 @@ public:
      virtual bool deposit(double amount) = 0;
      virtual bool withdraw(double amount) = 0;
      virtual void print(ostream &os) const override;
+     
      virtual ~Account() = default;
 };
 #endif

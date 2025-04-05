@@ -3,6 +3,8 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="InsufficientFundException.h"/>
+    <File Name="IllegalBalanceException.h"/>
     <File Name="I_Printable.cpp"/>
     <File Name="I_Printable.h"/>
     <File Name="Trust_Account.cpp"/>

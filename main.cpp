@@ -9,6 +9,7 @@
 using namespace std;
 
 int main() {
+    /*
     // Account frank{"Frank", 5000};         // should not compile
     // cout << frank << endl;
 
@@ -33,6 +34,10 @@ int main() {
     delete p1;
     delete p2;
     delete p3;
+    */
+    
+    // test your code here
+    std::cout << "Program completed successfully" << std::endl;
     
     return 0;
 }

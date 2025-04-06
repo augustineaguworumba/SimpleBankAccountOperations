@@ -4,7 +4,7 @@
 #include <string>
 #include "I_Printable.h"
 #include "IllegalBalanceException.h"
-#include "InsufficientFundException.h"
+#include "InsufficientFundsException.h"
 
 using namespace std;
 

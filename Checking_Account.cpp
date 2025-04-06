@@ -6,7 +6,12 @@ using namespace std;
 
 Checking_Account::Checking_Account(string name, double balance)
     : Account {name, balance} {
-}
+    }
+    //try : Account {name, balance} {
+    //}
+    //catch (...) {
+    //    ;
+    //}
 
 // Withdrawal:
 //      Amount supplied to withdrawal will be decremented by (amount -= 1.50)

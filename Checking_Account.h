@@ -23,6 +23,7 @@ public:
     virtual bool withdraw(double) override;
     virtual bool deposit(double) override;
     virtual void print(ostream &os) const override;
+    
     virtual ~Checking_Account() = default;
 };
 

@@ -1,10 +1,9 @@
 #ifndef __INSUFFICIENT_FUNDS_EXCEPTION_H__
 #define __INSUFFICIENT_FUNDS_EXCEPTION_H__
 
-class InsufficientFundsException
-{
+class InsufficientFundsException : public std::exception {
 public:
-    InsufficientFundsException() {}    // Either use that or InsufficientFundsException() = default;
+    InsufficientFundsException() noexcept {}    // Either use that or InsufficientFundsException() = default;
     ~InsufficientFundsException() {}   // Either use that or ~InsufficientFundsException() = default;
     virtual const char* what() const noexcept {
         return "Insufficient funds exception";
